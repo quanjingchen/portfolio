@@ -1,7 +1,6 @@
 ---
 const { title, img, role, dd, desc, url, badge, git, live, demo, online, tags, target = "_blank" } = Astro.props;
 import { Image } from "@astrojs/image/components";
-import dayjs from "dayjs";
 
 ---
 
@@ -32,7 +31,7 @@ import dayjs from "dayjs";
           {online && <a class="text-orange-500 hover:text-orange-700 underline" href={online}>Online</a>}
         </h1>
         <p class="py-1 text-1xl font-semibold">{role}</p>
-        {dd && <p class="text-sm">{dayjs(dd).format("ll")} </p>}
+        {dd && <p class="text-sm">{dd} </p>}
         <p class="text-1xl">{desc}</p>
         <div class="card-actions justify-end mt-1">
           {
