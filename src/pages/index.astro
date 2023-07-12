@@ -40,9 +40,9 @@ const last_posts = posts.slice(0, 3);
     url="https://heartbeatnurse.vercel.app"
     badge="On-going"
     role="Full-Stack Developer"
-    tech="Generative AI | Next.js | TypeScript | Django | TailWind | GraphQL | AWS CI/CD | PostgreSQL"
     git="https://github.com/Nurse-HeartBeat/FrontEnd"
     live="https://heartbeatnurse.vercel.app"
+    tags={["Next.js", "TypeScript", "Django", "GraphQL", "CI/CD","TailWind", "PostgreSQL"]}
   />
   <div class="divider my-0"></div>
 
@@ -53,7 +53,7 @@ const last_posts = posts.slice(0, 3);
     url="https://github.com/quanjingchen/BurnIt"
     badge="iOS/Android"
     role="Full-Stack Developer"
-    tech="Generative AI | React Native | Firebase | Redux | Node.js | Express.js | MongoDB"
+    tags={["AI", "React Native", "Firebase", "Redux", "Node.js", "Express.js", "MongoDB"]}
     git="https://github.com/quanjingchen/BurnIt"
     demo="https://youtu.be/McvzeZEbzJM"
   />
@@ -66,7 +66,7 @@ const last_posts = posts.slice(0, 3);
     url="https://github.com/2212-SCO/Review"
     badge="Scalable"
     role="Back-End Developer"
-    tech="Node.js | Restful API | Redis | Nginx | AWS EC2 | PostgreSQL "
+    tags={["Node.js", "Restful API", "Redis", "Nginx", "AWS EC2", "PostgreSQL"]}
     git="https://github.com/2212-SCO/Review"
   />
 
@@ -84,6 +84,7 @@ const last_posts = posts.slice(0, 3);
           url={"/blog/" + post.slug}
           target="_self"
           badge={post.data.badge}
+          dd={post.data.pubDate}
         />
         <div class="divider my-0" />
       </>
