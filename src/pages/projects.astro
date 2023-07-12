@@ -5,47 +5,95 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects: Software Development</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="HeartBeat"
+    img="/project1.png"
+    desc="An AI powered web platform connecting nurses with employers, offering mock interview, real-time chat and mapping functionality."
+    url="https://heartbeatnurse.vercel.app"
+    badge="On-going"
+    role="Full-Stack Developer"
+    tech="Generative AI | Next.js | TypeScript | Django | TailWind | GraphQL | AWS CI/CD | PostgreSQL"
+    git="https://github.com/Nurse-HeartBeat/FrontEnd"
+    live="https://heartbeatnurse.vercel.app"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="BurnIt"
+    img="/project2.png"
+    desc="A mobile chatbot that tracks daily physical activity and calorie intake, and offers personalized recommendations with ChatGPT."
+    url="https://github.com/quanjingchen/BurnIt"
+    badge="iOS/Android"
+    role="Full-Stack Developer"
+    tech="Generative AI | React Native | Firebase | Redux | Node.js | Express.js | MongoDB"
+    git="https://github.com/quanjingchen/BurnIt"
+    demo="https://youtu.be/McvzeZEbzJM"
   />
+  <div class="divider my-0"></div>
 
+  <HorizontalCard
+    title="Atelier API Extension"
+    img="/project3.png"
+    desc="Designed and optimized an scalable API server and database to support an e-commerce application with millions of products."
+    url="https://github.com/2212-SCO/Review"
+    badge="Scalable"
+    role="Back-End Developer"
+    tech="Node.js | Restful API | Redis | Nginx | AWS EC2 | PostgreSQL "
+    git="https://github.com/2212-SCO/Review"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Planny"
+    img="/project4.png"
+    desc="A mobile application for plant enthusiasts and households to simplify and streamline plant care."
+    url="https://github.com/Planny-Patrat-Blueocean/Planny"
+    badge="iOS/Android"
+    role="Front-End Developer"
+    tech="React Native | TypeScript | MongoDB | Firebase "
+    git="https://github.com/Planny-Patrat-Blueocean/Planny"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Atelier"
+    img="https://user-images.githubusercontent.com/19434669/218284573-293a273e-12de-41a7-9989-c348019452f5.png"
+    desc="A user-friendly platform for online browsing and purchasing."
+    url="https://github.com/coco2212/Mecca"
+    badge="User-Friendly"
+    role="Front-End Developer"
+    tech="React | HTML5 | CSS3 | AWS | Node.js"
+    git="https://github.com/coco2212/Mecca"
+    demo="https://docs.google.com/presentation/d/1k-QbhCpZMpY7bRpsPgSTiFSLWwwJpmyba1Tr0vdUtQM/edit"
+  />
+  <div class="divider my-0"></div>
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects: Machine Learning</div>
   </div>
+  <HorizontalCard
+  title="Machine Learning Algorithm Predictd Training Gain"
+  img="/project6.png"
+  desc="By applying a novel shapelet analytical approach that allows for accurate and interpretable analysis of time series data, I discovered an acute, ECG-derived segment that predicted learning outcomes from a 6-week mental training. Published in Human Brain Mapping, 2021."
+  url="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25034"
+  badge="Shapelet Analysis"
+  role="First Author"
+  tech="Python | Matlab | Machine Learning"
+  online="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.25034"
+/>
+<div class="divider my-0"></div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="App-Based Mental Training"
+    img="/project5.png"
+    desc="By applying state-of-the-art neuroimaging, statistical, and computational modeling techniques to brain data, I found significant improvement in cognitive ability and brain connectivity from a 6-week mental training. Published in Neuroimage, 2022."
+    url="https://www.sciencedirect.com/science/article/pii/S105381192200252X"
+    badge="Graph Theory"
+    role="First Author"
+    tech="Python | Matlab | Graph Theory"
+    online="https://www.sciencedirect.com/science/article/pii/S105381192200252X"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+
 </BaseLayout>

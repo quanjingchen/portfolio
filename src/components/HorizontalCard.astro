@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, img, role, tech, desc, url, badge, git, live, demo, online, tags, target = "_blank" } = Astro.props;
 import { Image } from "@astrojs/image/components";
 ---
 
@@ -12,7 +12,7 @@ import { Image } from "@astrojs/image/components";
         img && (
           <Image
             src={img}
-            aspectRatio="16:9"
+            aspectRatio="5:3"
             width={750}
             format="webp"
             alt={title}
@@ -24,8 +24,14 @@ import { Image } from "@astrojs/image/components";
         <h1 class="text-xl font-bold">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+          {live && <a class="text-pink-500 hover:text-red-700 underline" href={live}>Live</a>}
+          {demo && <a class="text-green-500 hover:text-blue-700 underline" href={demo}>Demo</a>}
+          {git && <a class="text-blue-500 hover:text-blue-700 underline" href={git}>GitHub</a>}
+          {online && <a class="text-orange-500 hover:text-orange-700 underline" href={online}>Online</a>}
         </h1>
-        <p class="py-1 text-1xl">{desc}</p>
+        <p class="py-1 text-1xl font-semibold">{role}</p>
+        <span class="text-sm">{tech} </>
+        <p class="text-1xl">{desc}</p>
         <div class="card-actions justify-end">
           {
             tags &&
